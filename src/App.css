@@ -1,0 +1,310 @@
+/* General Styles */
+html, body {
+  height: 100%; /* Ensure the body takes up the full height */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Use flexbox on the body */
+  flex-direction: column; /* Stack content vertically */
+  background-image: url('job.jpg'); /* Background image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: 'Arial', sans-serif;
+  justify-content: center; /* Center content vertically */
+  color: #2c3e50;
+}
+
+body {
+  background-color: #f0f0f0; /* Light gray background for the page */
+}
+
+/* Button container */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Space between buttons */
+  margin-bottom: 30px;
+}
+
+/* Button styling */
+button {
+  background-color: #0db64e; /* Green button */
+  color: white;
+  border: none; /* No border */
+  padding: 15px 25px; /* Increase padding for a more substantial button */
+  font-size: 1.1rem; /* Adjusted font size */
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0 10px; /* Add margin for spacing */
+  display: inline-block; /* Ensure buttons are inline */
+}
+
+button:hover {
+  background-color: #27ae60; /* Lighter green on hover */
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+  color: #06421f; /* Green headline */
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+/* Welcome Message */
+.welcome-messagecontainer {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2c3e50;
+  background-color: #ffffff;
+  width: 80%; /* Adjust width for the box */
+  max-width: 900px;
+  padding: 20px; /* Add padding */
+  border-radius: 12px; /* Rounded corners */
+  border: 1px solid #ddd; /* Light border */
+  margin: 40px auto; /* Center it horizontally */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Feature Content (To-Do List, Interview Prep, Job Form) */
+.feature-content, .news, .add-job-form {
+  background-color: #fff;
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 900px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.feature-content h2, .news h2, .add-job-form h2 {
+  color: #27ae60;
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* To-Do List */
+.feature-content ul {
+  padding-left: 20px;
+  list-style-type: none; /* Remove default bullet points */
+}
+
+.feature-content li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.feature-content li span {
+  flex: 1;
+}
+
+.feature-content input[type="text"] {
+  width: 250px;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  margin-top: 10px;
+}
+
+.feature-content button {
+  background-color: #e74c3c; /* Red delete button */
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.feature-content button:hover {
+  background-color: #c0392b;
+}
+
+/* Interview Preparation */
+.interview-stage-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.interview-stage-buttons button {
+  width: 160px;
+  padding: 12px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.interview-stage-buttons button:hover {
+  background-color: #2ecc71; /* Lighter green on hover */
+}
+
+.feature-content select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+/* Job Form */
+.add-job-form {
+  max-width: 700px;
+  margin: 30px auto;
+}
+
+.add-job-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-job-form input,
+.add-job-form textarea {
+  padding: 12px;
+  margin-bottom: 18px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.add-job-form textarea {
+  min-height: 200px; /* Ensure a tall enough job description box */
+  resize: vertical; /* Allow vertical resize */
+  transition: border-color 0.3s ease;
+}
+
+.add-job-form textarea:focus {
+  border-color: #27ae60; /* Green border on focus */
+  outline: none;
+}
+
+.add-job-form button {
+  background-color: #27ae60;
+  color: white;
+  padding: 14px 30px; /* Larger padding for a more substantial button */
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-job-form button:hover {
+  background-color: #2ecc71; /* Lighter green on hover */
+}
+
+/* Job List */
+.job-list {
+  margin: 30px auto;
+  max-width: 900px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.job-list ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.job-list li {
+  padding: 15px;
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.job-list button {
+  background-color: #e74c3c; /* Red delete button */
+  color: white;
+  padding: 10px 15px;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.job-list button:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
+
+/* News Section */
+.news ul {
+  padding-left: 20px;
+  list-style-type: none;
+}
+
+.news li {
+  margin: 15px 0;
+}
+
+.news a {
+  color: #27ae60;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.news a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .button-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .feature-content, .add-job-form, .news, .job-list {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .add-job-form input, .add-job-form textarea, .add-job-form button {
+    width: 100%;
+  }
+
+  .job-list li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .job-list button {
+    margin-top: 10px;
+  }
+}
