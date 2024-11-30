@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Job-tracker/static/css/main.c200ca5b.css",
-    "main.js": "/Job-tracker/static/js/main.5112c932.js",
-    "static/js/453.4d01f0aa.chunk.js": "/Job-tracker/static/js/453.4d01f0aa.chunk.js",
-    "static/media/job.jpg": "/Job-tracker/static/media/job.79318b19d1c391167dbb.jpg",
-    "index.html": "/Job-tracker/index.html",
-    "main.c200ca5b.css.map": "/Job-tracker/static/css/main.c200ca5b.css.map",
-    "main.5112c932.js.map": "/Job-tracker/static/js/main.5112c932.js.map",
-    "453.4d01f0aa.chunk.js.map": "/Job-tracker/static/js/453.4d01f0aa.chunk.js.map"
+    "main.css": "/job-tracker/static/css/main.30599803.css",
+    "main.js": "/job-tracker/static/js/main.7d345ba1.js",
+    "static/js/453.4d01f0aa.chunk.js": "/job-tracker/static/js/453.4d01f0aa.chunk.js",
+    "static/media/job.jpg": "/job-tracker/static/media/job.79318b19d1c391167dbb.jpg",
+    "index.html": "/job-tracker/index.html",
+    "main.30599803.css.map": "/job-tracker/static/css/main.30599803.css.map",
+    "main.7d345ba1.js.map": "/job-tracker/static/js/main.7d345ba1.js.map",
+    "453.4d01f0aa.chunk.js.map": "/job-tracker/static/js/453.4d01f0aa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c200ca5b.css",
-    "static/js/main.5112c932.js"
+    "static/css/main.30599803.css",
+    "static/js/main.7d345ba1.js"
   ]
 }
